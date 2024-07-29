@@ -1,0 +1,138 @@
+body {
+  background-color: #282c34;
+}
+
+.App {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.App header {
+  background-color: #181717;
+  height: calmp(50px, 10vh, 0px);
+  color: white;
+  position: fixed;
+  width: 100%;
+  max-width: 728px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  z-index: 99;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.App section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  width: clamp(428px, 100%, 728px);
+  background-color: rgb(40, 37, 53);
+}
+
+main {
+  padding: 10px;
+  height: 80vh;
+  margin: 10vh 0 10vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+main::-webkit-scrollbar {
+  width: 0.3rem;
+  height: 100%;
+}
+
+main::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+main::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+
+form {
+  height: 7.5vh;
+  position: sticky;
+  bottom: 0;
+  padding: 0;
+  background-color: rgb(24, 23, 23);
+  display: flex;
+  width: clamp(430px, 100%, 100%);
+}
+
+form button {
+  border-radius: 0;
+  width: 20%;
+  background-image: linear-gradient(135deg, #7950f2 5%, #748ffc 95%);
+  padding-left: 13px;
+}
+
+input {
+  line-height: 1.5;
+  width: 100%;
+  font-size: 1.5rem;
+  background: rgb(58, 58, 58);
+  color: white;
+  outline: none;
+  border: none;
+  padding: 0 10px;
+}
+
+.sign-in {
+  color: #282c34;
+  background: white;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+ul,
+li {
+  text-align: left;
+  list-style: none;
+}
+
+p {
+  max-width: 500px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  position: relative;
+  color: white;
+  white-space: pre-wrap;
+  text-align: start;
+  margin-top: 0;
+}
+
+.message {
+  display: flex;
+  align-items: start;
+}
+
+.sent {
+  flex-direction: row-reverse;
+}
+
+.received p {
+  color: white;
+  background-image: linear-gradient(135deg, #7950f2 5%, #748ffc 95%);
+  align-self: flex-end;
+}
+.sent p {
+  background: #fff;
+  color: black;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 2px 5px;
+}
